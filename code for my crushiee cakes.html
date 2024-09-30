@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Crushie Cakes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        #noBtn {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kanus a ko nimo sugton Ms. HR? 😍</h1>
+    <button id="yesBtn">Karun</button>
+    <button id="noBtn">huna-hunaon lang sa</button>
+</div>
+
+<script>
+    const noBtn = document.getElementById('noBtn');
+
+    noBtn.addEventListener('mouseenter', function() {
+        const randomX = Math.random() * (window.innerWidth - noBtn.clientWidth);
+        const randomY = Math.random() * (window.innerHeight - noBtn.clientHeight);
+        noBtn.style.left = randomX + 'px';
+        noBtn.style.top = randomY + 'px';
+    });
+
+    document.getElementById('yesBtn').addEventListener('click', function() {
+        alert('HAHAHA napugos atik ra bitaw manguyab pakos imoha🤣🤣😘');
+    });
+</script>
+
+</body>
+</html>
